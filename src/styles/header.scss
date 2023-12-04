@@ -1,0 +1,30 @@
+.header{
+    margin: auto;
+    width: 100%;
+    background-color: #E1E1E1;
+    padding: clamp(17.5px,1.8228vw,70px);
+    box-shadow: 1px 1px 3px 2px rgba(134, 134, 134, 0.5);
+    display: flex;
+    justify-content: space-between;
+    &__logo{
+        text-transform: uppercase;
+        color: #0B2040;
+    }
+    &__text{
+        display: flex;
+        justify-content: space-around;
+    }
+    &__main{
+
+    }
+    &__team{
+
+    }
+    &__req{
+        text-decoration: none;
+        color: white;
+        border: 1px solid #0B2040;
+        background-color: #0B2040;
+        
+    }
+}
