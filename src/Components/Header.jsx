@@ -1,16 +1,27 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
+import Hamburger from 'hamburger-react'
+import { Link as ScrollLink } from "react-scroll";
+
 
 const Header = () => {
+  const [isOpen, setOpen] = useState(false)
+  
   return (
     <>
-    <div className='header'>
-    <a className='header__logo'>Logo</a>
+    <header className='header'>
+    <nav className='nav'>
+    <ScrollLink className='header__logo'>Logo</ScrollLink>
     <span className='header__text'>
-    <a className='header__main'>Главная</a>
-    <a className='header__team'>Наша команда</a>
-    <a className='header__req' href="">Оставить заявку</a>
+    <ScrollLink className='header__main'>Главная</ScrollLink>
+    <ScrollLink className='header__team'>Наша команда</ScrollLink>
+    <ScrollLink className='header__req' href="">Оставить заявку</ScrollLink>
     </span>
+    </nav>
+    <div>
+    <Hamburger toggled={isOpen} toggle={setOpen}/>
+    {/* <Hamburger onToggle={toggled => ...} /> */}
     </div>
+    </header>
     </>
   )
 }

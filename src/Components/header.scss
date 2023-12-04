@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
 .header{
     margin: auto;
     width: 100%;
@@ -9,6 +11,7 @@
     &__logo{
         text-transform: uppercase;
         color: #0B2040;
+        font-family: 'Monoton', sans-serif;
     }
     &__text{
         display: flex;
