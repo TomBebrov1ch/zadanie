@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+
+.container {
+  margin: auto;
+  width: 90%;
+  &__text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &__first-text {
+      text-align: center;
+      font-weight: 600;
+      font-size: clamp(16px, 1.66656vw, 64px);
+      color: $blue;
+      font-family: "Raleway", sans-serif;
+    }
+  }
+}
+
+.separator {
+  margin-top: clamp(12.5px, 1.302vw, 50px);
+  border: 1px solid $blue;
+}
+
+.text__main-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+}
