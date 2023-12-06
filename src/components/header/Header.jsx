@@ -1,21 +1,15 @@
 import React, {useState, useEffect} from 'react'
 import Hamburger from 'hamburger-react'
 import { Link as ScrollLink } from "react-scroll";
+import Menu from '../menu/Menu';
 
 
-const Header = ({ isOpen , setOpen }) => {
-  useEffect(() => {
-    if (isOpen) {
-    document.body.style.overflowY = 'hidden';
-  } else {
-    document.body.style.overflowY= '';
-  }
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-  return () => {
-    document.body.style.overflowY = '';
-    };
-  }, [isOpen]);  
-  
+  const togglePanel = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
     <header className='header'>
@@ -35,9 +29,14 @@ const Header = ({ isOpen , setOpen }) => {
     <div className='burger-menu'>
     <Hamburger
       color="#007ACC"
-      toggled={isOpen}
-      onToggle={setOpen}
-    ></Hamburger>
+      isOpen={isOpen}
+      menuClicked={togglePanel}
+
+    />
+    <Menu></Menu>
+    <div className={`panel ${isOpen ? 'open' : ''}`}>
+
+    </div>
     </div>
     </header>
     </>
