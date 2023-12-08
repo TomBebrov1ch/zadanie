@@ -1,0 +1,12 @@
+.menu {
+  display: none;
+}
+
+.open {
+  position: absolute;
+  width: 100%;
+  display: block;
+  height: 100vh;
+  background-color: #007acc;
+  z-index: 1000;
+}
