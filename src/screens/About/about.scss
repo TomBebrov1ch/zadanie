@@ -1,83 +1,100 @@
 @import "../../styles/variables.scss";
 
 .con {
-    margin: auto;
-    margin-top: clamp(75px, 35.046vw, 300px);
-    width: 90%;
+  margin: auto;
+  margin-top: clamp(40px, 18.6912vw, 160px);
+  width: 90%;
 
-    &__text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    &__about {
-        text-align: center;
-        font-weight: 600;
-        font-size: clamp(9px, 4.20552vw, 36px);
-        color: $blue;
-        font-family: "Raleway", sans-serif;
-    }
+  &__about {
+    text-align: center;
+    font-weight: 600;
+    font-size: clamp(9px, 4.20552vw, 36px);
+    color: $blue;
+    font-family: "Raleway", sans-serif;
+  }
 
-    &__separator {
-        border: 1px solid $blue;
-        margin-top: clamp(9px, 4.20552vw, 36px);
-    }
+  &__separator {
+    border: 1px solid $blue;
+    margin-top: clamp(9px, 4.20552vw, 36px);
+  }
 
-    &__all-text {
-        margin-top: clamp(22.5px, 10.5138vw, 90px);
-    }
+  &__all-text {
+    margin-top: clamp(22.5px, 10.5138vw, 90px);
+  }
 
-    &__explain {}
+  &__explain {
+  }
 
-    &__main {
-        text-align: center;
-        font-family: "Raleway", sans-serif;
-        color: $gray;
-        font-weight: 800;
-        font-size: clamp(12px, 5.60736vw, 48px);
-        word-spacing: clamp(2.5px, 1.1682vw, 10px);
-        text-transform: uppercase;
-    }
+  &__main {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    color: $gray;
+    font-weight: 800;
+    font-size: clamp(12px, 5.60736vw, 48px);
+    word-spacing: clamp(2.5px, 1.1682vw, 10px);
+    text-transform: uppercase;
+  }
 
-    &__explain-span {
-        color: $blue;
-        font-weight: 700;
-    }
+  &__explain-span {
+    color: $blue;
+    font-weight: 700;
+  }
 
-    &__first-star {
-        margin-top: clamp(20px, 9.3456vw, 80px);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  &__first-star {
+    margin-top: clamp(25px, 11.681999999999999vw, 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    &__star {
-        width: 32px;
-        height: 32px;
-        margin-bottom: clamp(12.5px, 5.840999999999999vw, 50px);
-    }
+  &__star {
+    width: 32px;
+    height: 32px;
+    margin-bottom: clamp(12.5px, 5.840999999999999vw, 50px);
+  }
 
-    &__first-text {
-        text-align: center;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 500;
-        font-size: clamp(7.5px, 3.5046vw, 30px);
-        word-spacing: clamp(2.5px, 1.1682vw, 10px);
-    }
+  &__first-text {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: clamp(7.5px, 3.5046vw, 30px);
+  }
 
-    &__second-star {
-        margin-top: clamp(20px, 9.3456vw, 80px);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  &__second-star {
+    margin-top: clamp(20px, 9.3456vw, 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    &__second-text {
-        text-align: center;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 500;
-        font-size: clamp(7.5px, 3.5046vw, 30px);
-        word-spacing: clamp(2.5px, 1.1682vw, 10px);
-    }
+  &__second-text {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: clamp(7.5px, 3.5046vw, 30px);
+  }
+  &__accordions {
+  }
+  &__border-accordion {
+    border: none !important;
+  }
+  &__item {
+    color: $blue;
+  }
+  &__icon {
+    color: $blue;
+  }
+
+  &__a-paragraph {
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(7.5px, 3.5046vw, 30px);
+    display: flex;
+    align-items: flex-start;
+  }
 }
