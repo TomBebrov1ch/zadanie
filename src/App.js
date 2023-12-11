@@ -8,6 +8,9 @@ import "./screens/mainScreen/main.scss";
 import About from "./screens/About/About.jsx";
 import "./screens/About/about.scss";
 import Introduction from "./screens/Introduction/Introduction";
+import Advant from "./screens/Advant/Advant.jsx";
+import Implement from "./screens/Implement/Implement.jsx";
+import Results from "./screens/Results/Results.jsx";
 
 const App = () => {
   return (
@@ -17,6 +20,9 @@ const App = () => {
         <Main />
         <About />
         <Introduction />
+        <Advant />
+        <Implement />
+        <Results />
       </>
     </div>
   );

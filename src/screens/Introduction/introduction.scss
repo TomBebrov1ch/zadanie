@@ -3,6 +3,7 @@
 .container {
   margin: auto;
   margin-top: clamp(30px, 14.0184vw, 120px);
+
   &__text {
     text-align: center;
     font-family: "Raleway", sans-serif;
@@ -10,32 +11,39 @@
     font-size: clamp(12px, 5.60736vw, 48px);
     margin-bottom: clamp(17.5px, 8.177399999999999vw, 70px);
   }
+
   &__span-text {
     color: $blue;
     font-size: clamp(12px, 5.60736vw, 48px);
   }
+
   &__star {
     width: clamp(16px, 7.47648vw, 64px);
     height: clamp(16px, 7.47648vw, 64px);
     margin-bottom: clamp(10px, 4.6728vw, 40px);
   }
+
   &__text-second {
     font-family: "Open Sans", sans-serif;
     font-weight: 500;
     font-size: clamp(7px, 3.2709599999999996vw, 28px);
   }
+
   &__card {
     background-color: $white;
     width: 100%;
     height: clamp(107.5px, 50.2326vw, 430px);
     border-radius: 10px;
     margin-top: clamp(22.5px, 10.5138vw, 90px);
+    box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.10);
   }
+
   &__card__first {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   &__card__number {
     background-color: $blue;
     color: white;
@@ -46,16 +54,19 @@
     font-weight: 600;
     margin-top: clamp(10px, 4.6728vw, 40px);
   }
+
   &__card__word {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     font-size: clamp(10px, 4.6728vw, 40px);
   }
+
   &__card__par {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: clamp(10px, 4.6728vw, 40px);
   }
+
   &__card__span {
     color: $blue;
     font-family: "Open Sans", sans-serif;

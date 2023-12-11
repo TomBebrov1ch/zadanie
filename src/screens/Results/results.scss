@@ -1,0 +1,48 @@
+@import "../../styles/variables.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* body {
+    width: 100%;
+    height: auto;
+}
+
+.conts {
+    font-family: "Raleway", sans-serif;
+
+    &__head {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__text {
+        margin-top: clamp(35px, 16.354799999999997vw, 140px);
+        color: $blue;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        font-size: clamp(10px, 4.6728vw, 40px);
+    }
+
+    &__separator {
+        border: 1px solid $blue;
+        width: 80%;
+    }
+
+    &__main {
+        text-align: center;
+    }
+
+    &__main-text {
+        margin-top: clamp(15px, 7.0092vw, 60px);
+    }
+
+    &__main-span {
+        color: $blue;
+    }
+}

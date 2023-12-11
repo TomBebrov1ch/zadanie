@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Hamburger from "hamburger-react";
 import { Link as ScrollLink } from "react-scroll";
-import Menu from "../menu/Menu";
+
 
 const Header = () => {
   return (

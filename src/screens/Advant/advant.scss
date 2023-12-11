@@ -1,0 +1,95 @@
+@import "../../styles/variables.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* body {
+    width: 100%;
+    height: auto;
+}
+
+.cont {
+    background-color: $blue;
+    font-family: "Raleway", sans-serif;
+
+    &__heading {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__heading__text {
+        margin-top: clamp(35px, 16.354799999999997vw, 140px);
+        color: $white;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        font-size: clamp(10px, 4.6728vw, 40px);
+    }
+
+    &__heading__separator {
+        border: 1px solid $white;
+        width: 80%;
+    }
+
+    &__heading__first-text {
+        margin-top: clamp(15px, 7.0092vw, 60px);
+        color: $white;
+        font-weight: 700;
+        font-size: clamp(12px, 5.60736vw, 48px);
+        line-height: clamp(17px, 7.943759999999999vw, 68px);
+    }
+
+    &__products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__products__items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__products__star {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: clamp(16px, 7.47648vw, 64px);
+        height: clamp(16px, 7.47648vw, 64px);
+        margin-top: clamp(25px, 11.681999999999999vw, 100px);
+    }
+
+    &__products__text {
+        margin-top: clamp(8px, 3.73824vw, 32px);
+        text-align: center;
+        font-family: "Open Sans", sans-serif;
+        color: $white;
+        font-weight: 500;
+        font-size: clamp(10px, 4.6728vw, 40px);
+        width: 85%;
+    }
+
+    &__button {
+        width: 95%;
+        margin-bottom: clamp(35px, 16.354799999999997vw, 140px);
+    }
+
+    &__button__req {
+        margin-top: clamp(35px, 16.354799999999997vw, 140px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid $blue;
+        border-radius: 6px;
+        padding: clamp(6.5px, 3.03732vw, 26px);
+        color: $blue;
+        font-family: "Raleway", sans-serif;
+        font-size: clamp(8px, 3.73824vw, 32px);
+        font-weight: 700;
+    }
+}
