@@ -11,6 +11,7 @@ import Introduction from "./screens/Introduction/Introduction";
 import Advant from "./screens/Advant/Advant.jsx";
 import Implement from "./screens/Implement/Implement.jsx";
 import Results from "./screens/Results/Results.jsx";
+import RoadMap from "./screens/RoadMap/RoadMap";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Advant />
         <Implement />
         <Results />
+        <RoadMap />
       </>
     </div>
   );

@@ -1,0 +1,47 @@
+@import "../../styles/variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* body {
+  width: 100%;
+  height: auto;
+}
+
+.containers {
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  &__text__main {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: clamp(12px, 5.60736vw, 48px);
+    margin-top: clamp(22.5px, 10.5138vw, 90px);
+  }
+  &__card {
+    text-align: center;
+  }
+
+  &__card__number {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    font-size: clamp(24px, 11.21472vw, 96px);
+    color: $blue;
+    margin-top: clamp(30px, 14.0184vw, 120px);
+  }
+  &__card__text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: clamp(8px, 3.73824vw, 32px);
+  }
+  &__card__image {
+    height: clamp(83.5px, 39.01788vw, 334px);
+    width: clamp(139px, 64.95192vw, 556px);
+  }
+}

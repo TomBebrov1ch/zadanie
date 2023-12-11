@@ -1,48 +1,97 @@
 @import "../../styles/variables.scss";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 * body {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .conts {
+  margin: auto;
+  font-family: "Raleway", sans-serif;
+
+  &__head {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__text {
+    margin-top: clamp(35px, 16.354799999999997vw, 140px);
+    color: $blue;
     font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: clamp(10px, 4.6728vw, 40px);
+  }
 
-    &__head {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  &__separator {
+    border: 1px solid $blue;
+    width: 80%;
+  }
 
-    &__text {
-        margin-top: clamp(35px, 16.354799999999997vw, 140px);
-        color: $blue;
-        font-family: "Raleway", sans-serif;
-        font-weight: 500;
-        font-size: clamp(10px, 4.6728vw, 40px);
-    }
+  &__main {
+    text-align: center;
+  }
 
-    &__separator {
-        border: 1px solid $blue;
-        width: 80%;
-    }
+  &__main-text {
+    margin-top: clamp(15px, 7.0092vw, 60px);
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: clamp(12px, 5.60736vw, 48px);
+  }
 
-    &__main {
-        text-align: center;
-    }
-
-    &__main-text {
-        margin-top: clamp(15px, 7.0092vw, 60px);
-    }
-
-    &__main-span {
-        color: $blue;
-    }
+  &__main-span {
+    color: $blue;
+    font-weight: 700;
+  }
+  &__card {
+    background-color: $white;
+    width: 85%;
+    height: clamp(107.5px, 50.2326vw, 430px);
+    border-radius: 10px;
+    margin-top: clamp(22.5px, 10.5138vw, 90px);
+    margin-left: clamp(15px, 7.0092vw, 60px);
+    box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.1);
+  }
+  &__card-first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__card__img {
+    margin-top: clamp(22.5px, 10.5138vw, 90px);
+    width: clamp(16px, 7.47648vw, 64px);
+    height: clamp(16px, 7.47648vw, 64px);
+  }
+  &__card__text {
+    margin-top: clamp(15px, 7.0092vw, 60px);
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: clamp(11px, 5.140079999999999vw, 44px);
+  }
+  &__card__separator {
+    margin-top: clamp(22.5px, 10.5138vw, 90px);
+    margin-left: clamp(10.5px, 4.90644vw, 42px);
+    border: 1px solid $blue;
+    width: 90%;
+  }
+  &__card__second {
+    background-color: $white;
+    width: 85%;
+    height: clamp(150px, 70.092vw, 600px);
+    border-radius: 10px;
+    margin-top: clamp(22.5px, 10.5138vw, 90px);
+    margin-left: clamp(15px, 7.0092vw, 60px);
+    box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.1);
+  }
+  &__card__second-text {
+    text-align: center;
+  }
 }
