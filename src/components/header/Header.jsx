@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
 
+import "../header/header.scss";
 
-const Header = () => {
+import Hamburger from "hamburger-react";
+
+const Header = (props) => {
   return (
     <>
       <header className="header">
@@ -16,7 +19,14 @@ const Header = () => {
             <ScrollLink className="header__art">Статьи</ScrollLink>
           </span>
         </nav>
-        <span>
+        <div className="burger-btn">
+          <Hamburger
+            toggled={props.isOpen}
+            toggle={props.toggleMenu}
+            color="#007ACC"
+          />
+        </div>
+        <span className="header__span">
           <ScrollLink className="header__req">Оставить заявку</ScrollLink>
         </span>
       </header>

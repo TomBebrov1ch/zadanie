@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./components/header/Header";
 import "./styles/global.scss";
 import "./components/header/header.scss";
@@ -12,12 +12,30 @@ import Advant from "./screens/Advant/Advant.jsx";
 import Implement from "./screens/Implement/Implement.jsx";
 import Results from "./screens/Results/Results.jsx";
 import RoadMap from "./screens/RoadMap/RoadMap";
+import Menu from "./components/menu/Menu";
 
 const App = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  function toggleMenu() {
+    setIsOpen(!isOpen);
+  }
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "";
+    }
+
+    return () => {
+      document.body.style.overflowY = "";
+    };
+  }, [isOpen]);
+
   return (
     <div>
       <>
-        <Header />
+        <Header isOpen={isOpen} toggleMenu={toggleMenu} />
+        {isOpen && <Menu isOpen={isOpen} toggleMenu={toggleMenu} />}
         <Main />
         <About />
         <Introduction />

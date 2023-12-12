@@ -1,39 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 
-.header{
-    margin: auto;
-    width: auto;
-    background-color: white;
-    padding: clamp(22.5px,2.3436vw,90px);
-    display: flex;
-    justify-content: flex-start;
-    margin: auto;
-    &__logo{
-        font-weight: 800;
-        font-size: clamp(24px,2.49984vw,96px);
-        color: #007ACC;
-        font-family: 'Raleway', sans-serif;
-    }
-    &__text{
-        display: none;
-        justify-content: space-around;
-    }
-    &__main{
-
-    }
-    &__team{
-
-    }
-    &__req{
-        display: none;
-        text-decoration: none;
-        color: white;
-        border: 1px solid #B0C4B1;
-        background-color: #B0C4B1;
-    }
+.header {
+  margin: auto;
+  width: auto;
+  background-color: white;
+  padding: clamp(22.5px, 2.3436vw, 90px);
+  display: flex;
+  margin: auto;
+  &__logo {
+    font-weight: 800;
+    font-size: clamp(24px, 2.49984vw, 96px);
+    color: #007acc;
+    font-family: "Raleway", sans-serif;
+  }
+  &__text {
+    display: none;
+  }
+  &__main {
+  }
+  &__team {
+  }
+  &__span {
+    width: 0%;
+  }
+  &__req {
+    display: none;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #b0c4b1;
+    background-color: #b0c4b1;
+  }
 }
 
-.burger-menu{
-    display: flex;
-    justify-content: flex-end;
+.burger-btn {
+  width: clamp(24px, 11.21472vw, 96px);
+  height: clamp(24px, 11.21472vw, 96px);
+  display: flex;
+  justify-content: flex-end;
 }
